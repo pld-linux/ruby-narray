@@ -2,6 +2,7 @@
 %define ruby_rubylibdir %(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
 %define	ruby_ridir	%(ruby -r rbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"], "system")')
 Summary:	Numerical Ruby
+Summary(pl):	Numeryczny Ruby
 Name:		ruby-NArray
 Version:	0.5.7p4
 Release:	1
@@ -16,7 +17,20 @@ Requires:	ruby
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-NArray is a class of Numerical N-dimensional Array, whose elements are 1/2/4-byte Integer, single/double-prec Real/Complex, and Ruby Object. This extension library incorporates fast calculation and easy manipulation of large numerical arrays into the Ruby language. NArray has features similar to NumPy, but NArray has vector and matrix subclasses.
+NArray is a class of Numerical N-dimensional Array, whose elements are
+1/2/4-byte Integer, single/double-prec Real/Complex, and Ruby Object.
+This extension library incorporates fast calculation and easy
+manipulation of large numerical arrays into the Ruby language. NArray
+has features similar to NumPy, but NArray has vector and matrix
+subclasses.
+
+%description -l pl
+NArray to klasa numerycznej N-wymiarowej tablicy, której elementami s±
+1/2/4-bajtowy Integer, pojedynczej/podwójnej precyzji Real/Complex
+oraz Ruby Object. Ta biblioteka rozszerzenia w³±cza do jêzyka Ruby
+szybkie obliczenia oraz ³atwe operacjami na du¿ych tablicach
+numerycznych. NArray ma mo¿liwo¶ci podobne do NumPy, ale Narray ma
+podklasy vector i matrix.
 
 %prep
 %setup -q -n narray-%{version}
