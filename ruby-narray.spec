@@ -1,6 +1,3 @@
-%define	ruby_archdir	%(ruby -r rbconfig -e 'print Config::CONFIG["archdir"]')
-%define ruby_rubylibdir %(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
-%define	ruby_ridir	%(ruby -r rbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"], "system")')
 Summary:	Numerical Ruby
 Summary(pl):	Numeryczny Ruby
 Name:		ruby-NArray
@@ -11,6 +8,7 @@ Group:		Development/Languages
 Source0:	http://www.ir.isas.ac.jp/~masa/ruby/dist/narray-%{version}.tar.gz
 # Source0-md5:	6c6a5b680b91514e37992c92c74cf5ea
 URL:		http://www.ir.isas.ac.jp/~masa/ruby/index-e.html
+BuildRequires:	rpmbuild(macros) >= 1.263
 BuildRequires:	ruby
 BuildRequires:	ruby-devel
 Requires:	ruby
