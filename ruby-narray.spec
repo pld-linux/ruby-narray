@@ -2,16 +2,16 @@ Summary:	Numerical Ruby
 Summary(pl):	Numeryczny Ruby
 Name:		ruby-NArray
 Version:	0.5.7p4
-Release:	1
+Release:	2
 License:	Ruby's
 Group:		Development/Languages
 Source0:	http://www.ir.isas.ac.jp/~masa/ruby/dist/narray-%{version}.tar.gz
 # Source0-md5:	6c6a5b680b91514e37992c92c74cf5ea
 URL:		http://www.ir.isas.ac.jp/~masa/ruby/index-e.html
 BuildRequires:	rpmbuild(macros) >= 1.263
-BuildRequires:	ruby
+BuildRequires:	ruby-modules
 BuildRequires:	ruby-devel
-Requires:	ruby
+Requires:	ruby-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
