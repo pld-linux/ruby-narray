@@ -1,5 +1,5 @@
 Summary:	Numerical Ruby
-Summary(pl.UTF-8):   Numeryczny Ruby
+Summary(pl.UTF-8):	Numeryczny Ruby
 Name:		ruby-NArray
 Version:	0.5.7p4
 Release:	2
