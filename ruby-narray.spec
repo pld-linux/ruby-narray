@@ -1,5 +1,5 @@
 Summary:	Numerical Ruby
-Summary(pl):	Numeryczny Ruby
+Summary(pl.UTF-8):   Numeryczny Ruby
 Name:		ruby-NArray
 Version:	0.5.7p4
 Release:	2
@@ -21,12 +21,12 @@ manipulation of large numerical arrays into the Ruby language. NArray
 has features similar to NumPy, but NArray has vector and matrix
 subclasses.
 
-%description -l pl
-NArray to klasa numerycznej N-wymiarowej tablicy, której elementami s±
-1/2/4-bajtowy Integer, pojedynczej/podwójnej precyzji Real/Complex
-oraz Ruby Object. Ta biblioteka rozszerzenia w³±cza do jêzyka Ruby
-szybkie obliczenia oraz ³atwe operacjami na du¿ych tablicach
-numerycznych. NArray ma mo¿liwo¶ci podobne do NumPy, ale Narray ma
+%description -l pl.UTF-8
+NArray to klasa numerycznej N-wymiarowej tablicy, ktÃ³rej elementami sÄ…
+1/2/4-bajtowy Integer, pojedynczej/podwÃ³jnej precyzji Real/Complex
+oraz Ruby Object. Ta biblioteka rozszerzenia wÅ‚Ä…cza do jÄ™zyka Ruby
+szybkie obliczenia oraz Å‚atwe operacjami na duÅ¼ych tablicach
+numerycznych. NArray ma moÅ¼liwoÅ›ci podobne do NumPy, ale Narray ma
 podklasy vector i matrix.
 
 %prep
