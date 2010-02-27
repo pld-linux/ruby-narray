@@ -13,6 +13,7 @@ BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-devel
 %{?ruby_mod_ver_requires_eq}
 Obsoletes:	ruby-NArray
+Provides:	ruby-NArray
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
