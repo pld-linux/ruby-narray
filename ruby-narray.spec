@@ -1,16 +1,18 @@
+%define pkgname narray
 Summary:	Numerical Ruby
 Summary(pl.UTF-8):	Numeryczny Ruby
-Name:		ruby-NArray
+Name:		ruby-%{pkgname}
 Version:	0.5.7p4
 Release:	2
 License:	Ruby's
 Group:		Development/Languages
-Source0:	http://www.ir.isas.ac.jp/~masa/ruby/dist/narray-%{version}.tar.gz
+Source0:	http://www.ir.isas.ac.jp/~masa/ruby/dist/%{pkgname}-%{version}.tar.gz
 # Source0-md5:	6c6a5b680b91514e37992c92c74cf5ea
 URL:		http://www.ir.isas.ac.jp/~masa/ruby/index-e.html
 BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-devel
 %{?ruby_mod_ver_requires_eq}
+Obsoletes:	ruby-NArray
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
